@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Doc Vampire</title>
+  </head>
+  <body>
+    <div class="infos_globales">
+      <div class="nom">
+        <label for="name">Insérer le nom :</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="pseudo">
+        <label for="pseudo">Insérer le pseudo connus :</label>
+        <input type="text" name="pseudo" id="pseudo" />
+      </div>
+      <div class="nom_naissance">
+        <label for="nom_naissance">Insérer le nom de naissance :</label>
+        <input type="text" name="nom_naissance" id="nom_naissance" />
+      </div>
+      <div class="date_naissance">
+        <label for="date_naissance"
+          >Insérer la date de naissance (jj/mm/aaaa)</label
+        >
+        <input type="text" name="date_naissance" id="date_naissance" />
+      </div>
+      <div class="clan">
+        <label for="clan">Clan :</label>
+        <select name="clan" id="clan">
+          <option value="Assamite">Assamite</option>
+          <option value="Baali">Baali</option>
+          <option value="Brujah">Brujah</option>
+          <option value="Caitiff">Caitiff</option>
+          <option value="Disciple de Seth">Disciple de Seth</option>
+          <option value="Filles de la cacophonie">
+            Filles de la cacophonie
+          </option>
+          <option value="Gangrel">Gangrel</option>
+          <option value="Gargouilles">Gargouilles</option>
+          <option value="Giovanni">Giovanni</option>
+          <option value="Lassombra">Lassombra</option>
+          <option value="Lihannan">Lihannan</option>
+          <option value="Malkavien">Malkavien</option>
+          <option value="Nagaraja">Nagaraja</option>
+          <option value="Nosferatu">Nosferatu</option>
+          <option value="Ravnos">Ravnos</option>
+          <option value="Toreador">Toreador</option>
+          <option value="Tremere">Tremere</option>
+          <option value="Tzimisce">Tzimisce</option>
+          <option value="Ventrue">Ventrue</option>
+        </select>
+      </div>
+      <div class="lignee">
+        <label for="lignee">La lignée : </label>
+        <input type="text" name="lignee" id="lignee" />
+      </div>
+      <div class="sire">
+        <label for="sire">Renseigner le sire :</label>
+        <input type="text" name="sire" id="sire" />
+      </div>
+      <div class="date_etreinte">
+        <label for="date_etreinte">Renseigner la date d'étreinte :</label>
+        <input type="text" name="date_etreinte" id="date_etreinte" />
+      </div>
+      <div class="etat">
+        <input type="radio" name="etat" id="etat_actif" value="actif" />
+        <label for="etat_actif">Actif/Active</label>
+        <input type="radio" name="etat" id="etat_torpeur" value="torpeur" />
+        <label for="etat_torpeur">En torpeur :</label>
+        <input type="text" id="info_torpeur" />
+        <input type="radio" name="etat" id="etat_detruit" value="detruit" />
+        <label for="etat_detruit">Détruit :</label>
+        <input type="text" id="infos_detruit" />
+        <p>
+          <i>Si en torpeur ou détruit, préciser où et quand cela à eu lieu</i>
+        </p>
+      </div>
+      <div class="statut">
+        <input type="radio" name="statut" id="statut_infant" value="infant" />
+        <label for="statut_infant">Infant</label>
+        <input type="radio" name="statut" id="statut_nn" value="nn" />
+        <label for="statut_nn">NN</label>
+        <input type="radio" name="statut" id="statut_ancilla" value="ancilla" />
+        <label for="statut_ancilla">Ancilla</label>
+        <input type="radio" name="statut" id="statut_ancien" value="ancien" />
+        <label for="statut_ancien">Ancien/Ancienne</label>
+        <input
+          type="radio"
+          name="statut"
+          id="statut_venerable"
+          value="venerable"
+        />
+        <label for="statut_venerable">Vénérable</label>
+        <p>Poste :</p>
+        <input type="text" id="poste" />
+        <p>Praxis :</p>
+        <input type="text" id="praxis" />
+      </div>
+      <div class="competences">
+        <h3>Disciplines et compétences observées</h3>
+        <label for="disciplines">Disciplines employées :</label>
+        <input type="text" name="disciplines" id="disciplines" />
+
+        <label for="competences">Champs de compétences :</label>
+        <input type="text" name="competences" id="competences" />
+      </div>
+      <div class="infos_supp">
+        <p>Renseigner des infos supplémentaires :</p>
+        <input type="text" name="" id="infos_supp" />
+      </div>
+      <br />
+      <button id="toPDF">Mettre en PDF</button>
+    </div>
+  </body>
+</html>
