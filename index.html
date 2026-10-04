@@ -8,6 +8,8 @@
   </head>
   <body>
     <div class="infos_globales">
+      <p>CE DOCUMENT EST HJ, IL DEVIENT EJ LORSQU'IL EST MIS EN PDF</p>
+      <h3>Identité</h3>
       <div class="nom">
         <label for="name">Insérer le nom :</label>
         <input type="text" name="name" id="name" />
@@ -64,6 +66,9 @@
         <label for="date_etreinte">Renseigner la date d'étreinte :</label>
         <input type="text" name="date_etreinte" id="date_etreinte" />
       </div>
+    </div>
+    <div class="physique">
+      <h3>État physique</h3>
       <div class="etat">
         <input type="radio" name="etat" id="etat_actif" value="actif" />
         <label for="etat_actif">Actif/Active</label>
@@ -77,6 +82,9 @@
           <i>Si en torpeur ou détruit, préciser où et quand cela à eu lieu</i>
         </p>
       </div>
+    </div>
+    <div class="role">
+      <h3>Statut :</h3>
       <div class="statut">
         <input type="radio" name="statut" id="statut_infant" value="infant" />
         <label for="statut_infant">Infant</label>
@@ -93,10 +101,12 @@
           value="venerable"
         />
         <label for="statut_venerable">Vénérable</label>
-        <p>Poste :</p>
-        <input type="text" id="poste" />
-        <p>Praxis :</p>
-        <input type="text" id="praxis" />
+        <div class="poste_praxis">
+          <label for="poste">Poste : </label>
+          <input type="text" id="poste" size="50" />
+          <label for="praxis">Praxis : </label>
+          <input type="text" id="praxis" />
+        </div>
       </div>
       <div class="competences">
         <h3>Disciplines et compétences observées</h3>
@@ -111,7 +121,7 @@
         <input type="text" name="" id="infos_supp" />
       </div>
       <br />
-      <button id="toPDF">Mettre en PDF</button>
     </div>
+    <button id="toPDF">Mettre en PDF</button>
   </body>
 </html>
